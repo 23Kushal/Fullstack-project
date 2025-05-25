@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = '/api/auth/'; // Adjust if your server proxy is different
+const API_URL = 'http://localhost:5000/api/auth/'; // Adjust if your server proxy is different
 
 const register = async (userData) => {
     const response = await axios.post(API_URL + 'register', userData);
